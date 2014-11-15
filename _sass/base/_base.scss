@@ -173,6 +173,7 @@ footer {
 	background-repeat: no-repeat;
 	position: relative;
 	padding-bottom: 30px;
+	box-shadow: inset $black 0px 10px 100px;
 
 	@include mq(small){
 		background-image: none;
