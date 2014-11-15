@@ -1,0 +1,15 @@
+# Site settings
+title: Paramount Tattoo and Art Gallery
+email: your-email@domain.com
+description: Paramount Art and Tattoo Gallery, Madison Indiana. Tattoo Artist and Veteran David Pedigo.
+baseurl: "/paramountart"
+url: ""
+
+# Build settings
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+markdown: redcarpet2
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]

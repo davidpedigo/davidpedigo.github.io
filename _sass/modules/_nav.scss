@@ -1,0 +1,79 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.site-header{
+	background-color: $black;
+}
+
+.nav {
+	background-color: $black;
+	float: right;
+	margin-top: em(10px);
+	margin-bottom: em(10px);
+
+  @include e(item) {
+    @extend %nav-item-horz;
+    a {
+      @extend %nav-item-link;
+      color: palette(grey);
+      &:hover {
+        @extend %nav-item-on;
+				color: black;
+      }
+    }
+
+    @include m(current) {
+      @extend %nav-item-horz;
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }
+    }
+  }
+
+	li{
+		float: left;
+		a{
+			padding: em(10px);
+		}
+	}
+
+	@include mq(small){
+		float: none;
+		margin-top: em(50px);
+		li{
+			float: none;
+			text-align: center;
+			padding: em(10px);
+		}
+		a{
+			padding: em(20px);
+		}
+	}
+}
+.latte__toggle{
+	user-select: none;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	padding: 10px 15px;
+	cursor: pointer;
+	color: darken($white,40%);
+	z-index: 10;
+}
+
+@include mq(medium){ //at breakpoint and larger
+	.js .nav-collapse {
+		position: relative;
+	}
+	.js .nav-collapse.closed {
+		max-height: none;
+	}
+	.nav-toggle {
+		display: none;
+	}
+	.latte__toggle{
+		display: none;
+	}
+}
