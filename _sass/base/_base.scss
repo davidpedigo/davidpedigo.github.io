@@ -80,7 +80,7 @@ blockquote {
 //images
 
 img{
-	border: solid $white 7px;
+	border: solid lighten($black, 20%) 7px;
 }
 
 // Lists
