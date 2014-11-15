@@ -1,7 +1,8 @@
 #map{
-  height: em(350px);
-  border: $white em(10px) solid;
   img{
-    max-width: none;
+    position: relative;
+    width: em(610px);
+    margin: 0 auto;
+    max-width: 100%;
   }
 }

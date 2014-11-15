@@ -2661,16 +2661,27 @@ $(document).ready(function(){
 $('#sentForm').hide();
 var $gotcha = $('#gotcha').hide();
 
-var map = new GMaps({
- el: '#map',
- lat: 38.735919,
- lng: -85.378563
+
+url = GMaps.staticMapURL({
+  size: [610, 350],
+  lat: 38.735919,
+  lng: -85.378563,
+  markers: [{lat: 38.735919, lng: -85.378563}]
 });
-map.addMarker({
- lat: 38.735919,
- lng: -85.378563,
- title: 'Paramount Tattoo & Art Gallery'
-});
+
+$('<img/>').attr('src', url)
+  .appendTo('#map');
+
+// var map = new GMaps({
+//  el: '#map',
+//  lat: 38.735919,
+//  lng: -85.378563
+// });
+// map.addMarker({
+//  lat: 38.735919,
+//  lng: -85.378563,
+//  title: 'Paramount Tattoo & Art Gallery'
+// });
 
 $('#simpleForm').submit(function(){
  var myname = $('#name').val();
