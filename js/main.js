@@ -2670,7 +2670,7 @@ url = GMaps.staticMapURL({
 });
 
 $('<img/>').attr('src', url)
-  .appendTo('#map');
+  .appendTo('#map a');
 
 // var map = new GMaps({
 //  el: '#map',
