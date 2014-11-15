@@ -167,3 +167,25 @@ footer {
 		transition: margin-top 0.5s;
 	}
 }
+.wrapper--location{
+	background-image: url("../img/storefront_dark.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	padding-bottom: 30px;
+
+	@include mq(small){
+		background-image: none;
+		background-color: lighten($black, 5%);
+		text-align:center;
+	}
+}
+#instagram{
+	@include mq(small){
+		.grid__col--3{
+			max-width: 45%;
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
