@@ -54,7 +54,7 @@ $('#simpleForm').submit(function(){
  if ($gotcha === "") {
    var sendit = $.ajax({
      dataType: 'jsonp',
-     url: "http://getsimpleform.com/messages/ajax?form_api_token=4ace024a8ca5b1b4bcf77ebac77664ba",
+     url: "http://getsimpleform.com/messages/ajax?form_api_token=0f4a684cad4dd6fee15c18b7328a0264",
      data: $('#simpleForm').serialize(),
      success: function(){
        $('#simpleForm').hide();
