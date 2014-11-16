@@ -16,7 +16,7 @@ var userFeed = new Instafeed({
   accessToken: '1361946594.467ede5.39525b0165fd4536a1c53b2b335edcf8',
   limit: '8',
   resolution: 'standard_resolution',
-  template: '<li class="grid__col--3"><a href="{{link}}"><img src="{{image}}" itemprop="image"/></a><li>'
+  template: '<li class="grid__col--3"><a href="{{link}}"><img src="{{image}}" itemprop="image" alt="Instagram Photo"/></a><li>'
 });
 userFeed.run();
 
