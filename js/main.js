@@ -2690,7 +2690,7 @@ $('#simpleForm').submit(function(){
  if ($gotcha === "") {
    var sendit = $.ajax({
      dataType: 'jsonp',
-     url: "http://getsimpleform.com/messages/ajax?form_api_token=0f4a684cad4dd6fee15c18b7328a0264",
+     url: "http://getsimpleform.com/messages/ajax?form_api_token=f8699cd2d3a84c45c8c92dee79c5d7ee",
      data: $('#simpleForm').serialize(),
      success: function(){
        $('#simpleForm').hide();
@@ -2729,5 +2729,6 @@ var nav = responsiveNav(".nav-collapse",{
  }
 
 });
+
 
 });
